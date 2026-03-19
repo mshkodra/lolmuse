@@ -27,7 +27,7 @@ Activate this skill when:
 
 ## Commit Conventions
 
-Follow these commit message conventions based on 83 analyzed commits.
+Follow these commit message conventions based on 94 analyzed commits.
 
 ### Commit Style: Conventional Commits
 
@@ -37,7 +37,7 @@ Follow these commit message conventions based on 83 analyzed commits.
 
 ### Message Guidelines
 
-- Average message length: ~60 characters
+- Average message length: ~61 characters
 - Keep first line concise and descriptive
 - Use imperative mood ("Add feature" not "Added feature")
 
@@ -51,7 +51,7 @@ feat: add lolmuse ECC bundle (.claude/commands/add-backend-api-endpoint-command.
 *Commit message example*
 
 ```text
-feat: add lolmuse ECC bundle (.claude/commands/add-ecc-bundle-command.md)
+feat: add lolmuse ECC bundle (.claude/commands/add-ecc-bundle.md)
 ```
 
 *Commit message example*
@@ -152,31 +152,33 @@ Standard feature implementation workflow
 **Example commit sequence**:
 ```
 feat: add lolmuse ECC bundle (.codex/agents/explorer.toml)
-feat: add lolmuse ECC bundle (.codex/agents/reviewer.toml)
 feat: add lolmuse ECC bundle (.codex/agents/docs-researcher.toml)
+feat: add lolmuse ECC bundle (.codex/agents/reviewer.toml)
 ```
 
 ### Add Ecc Bundle
 
-Adds a new ECC (Extensible Command Collection) bundle to the lolmuse project, including commands, skills, identity, and agent configuration files.
+Adds a new ECC bundle to the lolmuse project, including commands, skills, identity, and agent definitions.
 
-**Frequency**: ~4 times per month
+**Frequency**: ~5 times per month
 
 **Steps**:
 1. Add or update .claude/commands/add-ecc-bundle.md
 2. Add or update .claude/commands/feature-development.md
-3. Add or update .claude/identity.json
-4. Add or update .claude/ecc-tools.json
-5. Add or update .claude/skills/lolmuse/SKILL.md
-6. Add or update .agents/skills/lolmuse/SKILL.md
-7. Add or update .agents/skills/lolmuse/agents/openai.yaml
-8. Add or update .codex/agents/docs-researcher.toml
-9. Add or update .codex/agents/reviewer.toml
-10. Add or update .codex/agents/explorer.toml
+3. Add or update .claude/commands/add-backend-api-endpoint-command.md or similar command files
+4. Add or update .claude/identity.json
+5. Add or update .claude/ecc-tools.json
+6. Add or update .claude/skills/lolmuse/SKILL.md
+7. Add or update .agents/skills/lolmuse/SKILL.md
+8. Add or update .agents/skills/lolmuse/agents/openai.yaml
+9. Add or update .codex/agents/docs-researcher.toml
+10. Add or update .codex/agents/reviewer.toml
+11. Add or update .codex/agents/explorer.toml
 
 **Files typically involved**:
 - `.claude/commands/add-ecc-bundle.md`
 - `.claude/commands/feature-development.md`
+- `.claude/commands/add-backend-api-endpoint-command.md`
 - `.claude/identity.json`
 - `.claude/ecc-tools.json`
 - `.claude/skills/lolmuse/SKILL.md`
@@ -190,6 +192,7 @@ Adds a new ECC (Extensible Command Collection) bundle to the lolmuse project, in
 ```
 Add or update .claude/commands/add-ecc-bundle.md
 Add or update .claude/commands/feature-development.md
+Add or update .claude/commands/add-backend-api-endpoint-command.md or similar command files
 Add or update .claude/identity.json
 Add or update .claude/ecc-tools.json
 Add or update .claude/skills/lolmuse/SKILL.md
@@ -202,39 +205,84 @@ Add or update .codex/agents/explorer.toml
 
 ### Add Backend Api Endpoint Command
 
-Adds documentation or implementation for a command that creates a new backend API endpoint.
+Adds a new backend API endpoint command definition for lolmuse ECC.
 
-**Frequency**: ~2 times per month
+**Frequency**: ~3 times per month
 
 **Steps**:
 1. Add or update .claude/commands/add-backend-api-endpoint-command.md
-2. Optionally add or update .claude/commands/add-backend-api-endpoint.md
+2. Optionally update related command or documentation files
 
 **Files typically involved**:
 - `.claude/commands/add-backend-api-endpoint-command.md`
-- `.claude/commands/add-backend-api-endpoint.md`
 
 **Example commit sequence**:
 ```
 Add or update .claude/commands/add-backend-api-endpoint-command.md
-Optionally add or update .claude/commands/add-backend-api-endpoint.md
+Optionally update related command or documentation files
 ```
 
-### Add Backend Feature Addition Command
+### Add Skill Documentation
 
-Adds documentation or implementation for a command that assists with backend feature addition.
+Adds or updates a SKILL.md file for lolmuse skills in both Claude and agents directories.
 
-**Frequency**: ~2 times per month
+**Frequency**: ~3 times per month
 
 **Steps**:
-1. Add or update .claude/commands/backend-feature-addition.md
+1. Add or update .claude/skills/lolmuse/SKILL.md
+2. Add or update .agents/skills/lolmuse/SKILL.md
 
 **Files typically involved**:
-- `.claude/commands/backend-feature-addition.md`
+- `.claude/skills/lolmuse/SKILL.md`
+- `.agents/skills/lolmuse/SKILL.md`
 
 **Example commit sequence**:
 ```
-Add or update .claude/commands/backend-feature-addition.md
+Add or update .claude/skills/lolmuse/SKILL.md
+Add or update .agents/skills/lolmuse/SKILL.md
+```
+
+### Add Codex Agent Configs
+
+Adds or updates agent configuration files for docs-researcher, reviewer, and explorer in the codex agents directory.
+
+**Frequency**: ~4 times per month
+
+**Steps**:
+1. Add or update .codex/agents/docs-researcher.toml
+2. Add or update .codex/agents/reviewer.toml
+3. Add or update .codex/agents/explorer.toml
+
+**Files typically involved**:
+- `.codex/agents/docs-researcher.toml`
+- `.codex/agents/reviewer.toml`
+- `.codex/agents/explorer.toml`
+
+**Example commit sequence**:
+```
+Add or update .codex/agents/docs-researcher.toml
+Add or update .codex/agents/reviewer.toml
+Add or update .codex/agents/explorer.toml
+```
+
+### Add Identity And Tools
+
+Adds or updates the identity and ECC tools configuration for lolmuse.
+
+**Frequency**: ~3 times per month
+
+**Steps**:
+1. Add or update .claude/identity.json
+2. Add or update .claude/ecc-tools.json
+
+**Files typically involved**:
+- `.claude/identity.json`
+- `.claude/ecc-tools.json`
+
+**Example commit sequence**:
+```
+Add or update .claude/identity.json
+Add or update .claude/ecc-tools.json
 ```
 
 
