@@ -10,16 +10,16 @@ Use this workflow when working on **add-ecc-bundle** in `lolmuse`.
 
 ## Goal
 
-Adds a new ECC (Extensible Command/Capability) bundle to the project, including commands, skills, agent definitions, and configuration files.
+Adds a new ECC (Extensible Command/Capability) bundle to the project, including commands, agent configurations, skills, and related metadata.
 
 ## Common Files
 
 - `.claude/commands/*.md`
-- `.claude/identity.json`
-- `.claude/skills/lolmuse/SKILL.md`
-- `.claude/ecc-tools.json`
 - `.codex/agents/*.toml`
+- `.claude/identity.json`
+- `.claude/ecc-tools.json`
 - `.agents/skills/lolmuse/SKILL.md`
+- `.agents/skills/lolmuse/agents/openai.yaml`
 
 ## Suggested Sequence
 
@@ -30,11 +30,11 @@ Adds a new ECC (Extensible Command/Capability) bundle to the project, including 
 
 ## Typical Commit Signals
 
-- Add or update .claude/commands/*.md files (such as backend-feature-addition.md, add-ecc-bundle.md, feature-development.md, project-initialization.md)
-- Add or update .claude/identity.json
-- Add or update .claude/skills/lolmuse/SKILL.md
-- Add or update .claude/ecc-tools.json
-- Add or update .codex/agents/*.toml (docs-researcher.toml, reviewer.toml, explorer.toml)
+- Add or update files in .claude/commands/ (e.g., backend-feature-addition.md, add-ecc-bundle.md, feature-development.md, project-initialization.md)
+- Add or update agent configuration files in .codex/agents/ (e.g., docs-researcher.toml, reviewer.toml, explorer.toml)
+- Add or update identity and tool metadata in .claude/ (e.g., identity.json, ecc-tools.json)
+- Add or update skill definitions in .agents/skills/lolmuse/ and .claude/skills/lolmuse/ (e.g., SKILL.md, agents/openai.yaml)
+- Optionally add or update instincts or config files (e.g., .claude/homunculus/instincts/inherited/lolmuse-instincts.yaml, .codex/AGENTS.md, .codex/config.toml)
 
 ## Notes
 
