@@ -1,0 +1,132 @@
+# Instincts generated from https://github.com/mshkodra/lolmuse
+# Generated: 2026-03-19T22:23:49.981Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: lolmuse-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/mshkodra/lolmuse
+---
+
+# Lolmuse Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: feat
+
+## Evidence
+
+- 5 commits analyzed
+- Detected conventional commit pattern
+- Examples: feat: add polynomial root-finding endpoint, feat: backend setup
+
+---
+id: lolmuse-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/mshkodra/lolmuse
+---
+
+# Lolmuse Commit Length
+
+## Action
+
+Keep commit messages concise (~21 characters)
+
+## Evidence
+
+- Average commit message length: 21 chars
+- Based on 5 commits
+
+---
+id: lolmuse-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/mshkodra/lolmuse
+---
+
+# Lolmuse Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: lolmuse-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/mshkodra/lolmuse
+---
+
+# Lolmuse Export Style
+
+## Action
+
+Prefer default exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: default
+
+---
+id: lolmuse-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/mshkodra/lolmuse
+---
+
+# Lolmuse Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: lolmuse-workflow-project-initialization
+trigger: "when doing project initialization"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/mshkodra/lolmuse
+---
+
+# Lolmuse Workflow Project Initialization
+
+## Action
+
+Follow the project-initialization workflow:
+1. Create or update .gitignore and README.md
+2. Add configuration files (e.g., package.json, requirements.txt, tsconfig.json, alembic.ini)
+3. Add initial source code structure and boilerplate (e.g., main.py, layout.tsx)
+4. Add environment or dependency lock/config files (e.g., pnpm-lock.yaml, next-env.d.ts)
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: .gitignore, README.md, backend/requirements.txt
+
