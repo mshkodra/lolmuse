@@ -10,10 +10,11 @@ Use this workflow when working on **add-backend-api-endpoint-command** in `lolmu
 
 ## Goal
 
-Adds or updates the command documentation for adding a backend API endpoint in lolmuse.
+Adds documentation or implementation for a command that creates a new backend API endpoint.
 
 ## Common Files
 
+- `.claude/commands/add-backend-api-endpoint-command.md`
 - `.claude/commands/add-backend-api-endpoint.md`
 
 ## Suggested Sequence
@@ -25,7 +26,8 @@ Adds or updates the command documentation for adding a backend API endpoint in l
 
 ## Typical Commit Signals
 
-- Create or update .claude/commands/add-backend-api-endpoint.md
+- Add or update .claude/commands/add-backend-api-endpoint-command.md
+- Optionally add or update .claude/commands/add-backend-api-endpoint.md
 
 ## Notes
 
