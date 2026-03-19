@@ -1,16 +1,16 @@
 ---
-name: add-ecc-bundle
-description: Workflow command scaffold for add-ecc-bundle in lolmuse.
+name: add-command-documentation
+description: Workflow command scaffold for add-command-documentation in lolmuse.
 allowed_tools: ["Bash", "Read", "Write", "Grep", "Glob"]
 ---
 
-# /add-ecc-bundle
+# /add-command-documentation
 
-Use this workflow when working on **add-ecc-bundle** in `lolmuse`.
+Use this workflow when working on **add-command-documentation** in `lolmuse`.
 
 ## Goal
 
-Adds a new ECC bundle to the lolmuse project, including commands, skills, identity, and agent configurations.
+Adds or updates documentation for commands related to backend API endpoints, ECC bundles, or feature development.
 
 ## Common Files
 
@@ -18,8 +18,6 @@ Adds a new ECC bundle to the lolmuse project, including commands, skills, identi
 - `.claude/commands/add-ecc-bundle.md`
 - `.claude/commands/add-ecc-bundle-command.md`
 - `.claude/commands/feature-development.md`
-- `.claude/identity.json`
-- `.claude/ecc-tools.json`
 
 ## Suggested Sequence
 
@@ -33,8 +31,6 @@ Adds a new ECC bundle to the lolmuse project, including commands, skills, identi
 - Create or update .claude/commands/add-backend-api-endpoint-command.md
 - Create or update .claude/commands/add-ecc-bundle.md or .claude/commands/add-ecc-bundle-command.md
 - Create or update .claude/commands/feature-development.md
-- Create or update .claude/identity.json
-- Create or update .claude/ecc-tools.json
 
 ## Notes
 
