@@ -2,7 +2,7 @@
   "version": "1.3",
   "schemaVersion": "1.0",
   "generatedBy": "ecc-tools",
-  "generatedAt": "2026-03-19T22:26:52.896Z",
+  "generatedAt": "2026-03-19T22:27:23.829Z",
   "repo": "https://github.com/mshkodra/lolmuse",
   "profiles": {
     "requested": "research",
@@ -99,7 +99,7 @@
     ".codex/agents/docs-researcher.toml",
     ".claude/homunculus/instincts/inherited/lolmuse-instincts.yaml",
     ".claude/commands/feature-development.md",
-    ".claude/commands/add-ecc-bundle-command.md",
+    ".claude/commands/add-ecc-bundle.md",
     ".claude/commands/add-backend-api-endpoint-command.md"
   ],
   "packageFiles": {
@@ -117,7 +117,7 @@
     ],
     "workflow-pack": [
       ".claude/commands/feature-development.md",
-      ".claude/commands/add-ecc-bundle-command.md",
+      ".claude/commands/add-ecc-bundle.md",
       ".claude/commands/add-backend-api-endpoint-command.md"
     ]
   },
@@ -136,7 +136,7 @@
     ],
     "workflow-pack": [
       ".claude/commands/feature-development.md",
-      ".claude/commands/add-ecc-bundle-command.md",
+      ".claude/commands/add-ecc-bundle.md",
       ".claude/commands/add-backend-api-endpoint-command.md"
     ]
   },
@@ -198,8 +198,8 @@
     },
     {
       "moduleId": "workflow-pack",
-      "path": ".claude/commands/add-ecc-bundle-command.md",
-      "description": "Workflow command scaffold for add-ecc-bundle-command."
+      "path": ".claude/commands/add-ecc-bundle.md",
+      "description": "Workflow command scaffold for add-ecc-bundle."
     },
     {
       "moduleId": "workflow-pack",
@@ -213,8 +213,8 @@
       "path": ".claude/commands/feature-development.md"
     },
     {
-      "command": "add-ecc-bundle-command",
-      "path": ".claude/commands/add-ecc-bundle-command.md"
+      "command": "add-ecc-bundle",
+      "path": ".claude/commands/add-ecc-bundle.md"
     },
     {
       "command": "add-backend-api-endpoint-command",
@@ -227,7 +227,7 @@
       "identityPath": ".claude/identity.json",
       "commandPaths": [
         ".claude/commands/feature-development.md",
-        ".claude/commands/add-ecc-bundle-command.md",
+        ".claude/commands/add-ecc-bundle.md",
         ".claude/commands/add-backend-api-endpoint-command.md"
       ]
     },
