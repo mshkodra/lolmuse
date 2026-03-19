@@ -2,7 +2,7 @@
   "version": "1.3",
   "schemaVersion": "1.0",
   "generatedBy": "ecc-tools",
-  "generatedAt": "2026-03-19T22:23:46.005Z",
+  "generatedAt": "2026-03-19T22:24:17.319Z",
   "repo": "https://github.com/mshkodra/lolmuse",
   "profiles": {
     "requested": "research",
@@ -98,6 +98,8 @@
     ".codex/agents/reviewer.toml",
     ".codex/agents/docs-researcher.toml",
     ".claude/homunculus/instincts/inherited/lolmuse-instincts.yaml",
+    ".claude/commands/feature-development.md",
+    ".claude/commands/add-ecc-bundle.md",
     ".claude/commands/project-initialization.md"
   ],
   "packageFiles": {
@@ -114,6 +116,8 @@
       ".claude/homunculus/instincts/inherited/lolmuse-instincts.yaml"
     ],
     "workflow-pack": [
+      ".claude/commands/feature-development.md",
+      ".claude/commands/add-ecc-bundle.md",
       ".claude/commands/project-initialization.md"
     ]
   },
@@ -131,6 +135,8 @@
       ".claude/homunculus/instincts/inherited/lolmuse-instincts.yaml"
     ],
     "workflow-pack": [
+      ".claude/commands/feature-development.md",
+      ".claude/commands/add-ecc-bundle.md",
       ".claude/commands/project-initialization.md"
     ]
   },
@@ -187,11 +193,29 @@
     },
     {
       "moduleId": "workflow-pack",
+      "path": ".claude/commands/feature-development.md",
+      "description": "Workflow command scaffold for feature-development."
+    },
+    {
+      "moduleId": "workflow-pack",
+      "path": ".claude/commands/add-ecc-bundle.md",
+      "description": "Workflow command scaffold for add-ecc-bundle."
+    },
+    {
+      "moduleId": "workflow-pack",
       "path": ".claude/commands/project-initialization.md",
       "description": "Workflow command scaffold for project-initialization."
     }
   ],
   "workflows": [
+    {
+      "command": "feature-development",
+      "path": ".claude/commands/feature-development.md"
+    },
+    {
+      "command": "add-ecc-bundle",
+      "path": ".claude/commands/add-ecc-bundle.md"
+    },
     {
       "command": "project-initialization",
       "path": ".claude/commands/project-initialization.md"
@@ -202,6 +226,8 @@
       "skillPath": ".claude/skills/lolmuse/SKILL.md",
       "identityPath": ".claude/identity.json",
       "commandPaths": [
+        ".claude/commands/feature-development.md",
+        ".claude/commands/add-ecc-bundle.md",
         ".claude/commands/project-initialization.md"
       ]
     },

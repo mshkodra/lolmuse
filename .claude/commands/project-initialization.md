@@ -10,16 +10,16 @@ Use this workflow when working on **project-initialization** in `lolmuse`.
 
 ## Goal
 
-Sets up a new project or major subproject (backend or frontend) with initial configuration, dependencies, and boilerplate files.
+Initializes a new project or major subproject, setting up core configuration, dependencies, and scaffolding for backend or frontend.
 
 ## Common Files
 
 - `.gitignore`
 - `README.md`
-- `backend/requirements.txt`
 - `backend/alembic.ini`
-- `backend/app/main.py`
-- `web/package.json`
+- `backend/alembic/*`
+- `backend/app/*`
+- `backend/requirements.txt`
 
 ## Suggested Sequence
 
@@ -31,9 +31,8 @@ Sets up a new project or major subproject (backend or frontend) with initial con
 ## Typical Commit Signals
 
 - Create or update .gitignore and README.md
-- Add configuration files (e.g., package.json, requirements.txt, tsconfig.json, alembic.ini)
-- Add initial source code structure and boilerplate (e.g., main.py, layout.tsx)
-- Add environment or dependency lock/config files (e.g., pnpm-lock.yaml, next-env.d.ts)
+- For backend: add backend/alembic, backend/app, backend/requirements.txt, backend/app/config.py, backend/app/database.py, backend/app/main.py
+- For frontend: add web/README.md, web/app/*, web/package.json, web/tsconfig.json, web/next.config.ts, etc.
 
 ## Notes
 
