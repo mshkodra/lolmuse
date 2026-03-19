@@ -27,7 +27,7 @@ Activate this skill when:
 
 ## Commit Conventions
 
-Follow these commit message conventions based on 28 analyzed commits.
+Follow these commit message conventions based on 39 analyzed commits.
 
 ### Commit Style: Conventional Commits
 
@@ -37,7 +37,7 @@ Follow these commit message conventions based on 28 analyzed commits.
 
 ### Message Guidelines
 
-- Average message length: ~55 characters
+- Average message length: ~57 characters
 - Keep first line concise and descriptive
 - Use imperative mood ("Add feature" not "Added feature")
 
@@ -45,7 +45,7 @@ Follow these commit message conventions based on 28 analyzed commits.
 *Commit message example*
 
 ```text
-feat: add lolmuse ECC bundle (.claude/commands/project-initialization.md)
+feat: add lolmuse ECC bundle (.claude/commands/backend-feature-addition.md)
 ```
 
 *Commit message example*
@@ -160,50 +160,55 @@ feat: backend setup
 
 ### Add Ecc Bundle
 
-Adds a new ECC (Extended Cognitive Component) bundle to the project, including commands, agent configs, skills, and tool definitions.
+Adds a new ECC (Extensible Command/Capability) bundle to the project, including commands, skills, agent definitions, and configuration files.
 
-**Frequency**: ~4 times per month
+**Frequency**: ~3 times per month
 
 **Steps**:
-1. Add or update .claude/commands/*.md files for new commands.
-2. Add or update .codex/agents/*.toml files for agent configurations.
-3. Add or update .agents/skills/lolmuse/* for skill definitions.
-4. Add or update .claude/skills/lolmuse/SKILL.md for skill documentation.
-5. Add or update .claude/ecc-tools.json for tool definitions.
-6. Add or update .claude/identity.json for identity configuration.
-7. Optionally add/update .claude/homunculus/instincts/inherited/*.yaml for instincts.
+1. Add or update .claude/commands/*.md files (such as backend-feature-addition.md, add-ecc-bundle.md, feature-development.md, project-initialization.md)
+2. Add or update .claude/identity.json
+3. Add or update .claude/skills/lolmuse/SKILL.md
+4. Add or update .claude/ecc-tools.json
+5. Add or update .codex/agents/*.toml (docs-researcher.toml, reviewer.toml, explorer.toml)
+6. Add or update .agents/skills/lolmuse/SKILL.md and .agents/skills/lolmuse/agents/openai.yaml
+7. Optionally add or update .claude/homunculus/instincts/inherited/*.yaml
+8. Optionally add or update .codex/AGENTS.md and .codex/config.toml
 
 **Files typically involved**:
 - `.claude/commands/*.md`
-- `.codex/agents/*.toml`
-- `.agents/skills/lolmuse/*`
+- `.claude/identity.json`
 - `.claude/skills/lolmuse/SKILL.md`
 - `.claude/ecc-tools.json`
-- `.claude/identity.json`
+- `.codex/agents/*.toml`
+- `.agents/skills/lolmuse/SKILL.md`
+- `.agents/skills/lolmuse/agents/openai.yaml`
 - `.claude/homunculus/instincts/inherited/*.yaml`
+- `.codex/AGENTS.md`
+- `.codex/config.toml`
 
 **Example commit sequence**:
 ```
-Add or update .claude/commands/*.md files for new commands.
-Add or update .codex/agents/*.toml files for agent configurations.
-Add or update .agents/skills/lolmuse/* for skill definitions.
-Add or update .claude/skills/lolmuse/SKILL.md for skill documentation.
-Add or update .claude/ecc-tools.json for tool definitions.
-Add or update .claude/identity.json for identity configuration.
-Optionally add/update .claude/homunculus/instincts/inherited/*.yaml for instincts.
+Add or update .claude/commands/*.md files (such as backend-feature-addition.md, add-ecc-bundle.md, feature-development.md, project-initialization.md)
+Add or update .claude/identity.json
+Add or update .claude/skills/lolmuse/SKILL.md
+Add or update .claude/ecc-tools.json
+Add or update .codex/agents/*.toml (docs-researcher.toml, reviewer.toml, explorer.toml)
+Add or update .agents/skills/lolmuse/SKILL.md and .agents/skills/lolmuse/agents/openai.yaml
+Optionally add or update .claude/homunculus/instincts/inherited/*.yaml
+Optionally add or update .codex/AGENTS.md and .codex/config.toml
 ```
 
 ### Backend Feature Addition
 
-Adds a new backend API endpoint or feature, including router, main app registration, and dependency updates.
+Implements a new backend API endpoint, including router, main application integration, and dependency updates.
 
 **Frequency**: ~2 times per month
 
 **Steps**:
-1. Create or update backend/app/routers/<feature>.py for the new endpoint logic.
-2. Update backend/app/routers/__init__.py to include the new router.
-3. Update backend/app/main.py to register the router or modify main logic.
-4. Update backend/requirements.txt if new dependencies are needed.
+1. Add or update a new router file in backend/app/routers/*.py
+2. Update backend/app/routers/__init__.py to include the new router
+3. Update backend/app/main.py to register the new router
+4. Update backend/requirements.txt if new dependencies are needed
 
 **Files typically involved**:
 - `backend/app/routers/*.py`
@@ -213,36 +218,41 @@ Adds a new backend API endpoint or feature, including router, main app registrat
 
 **Example commit sequence**:
 ```
-Create or update backend/app/routers/<feature>.py for the new endpoint logic.
-Update backend/app/routers/__init__.py to include the new router.
-Update backend/app/main.py to register the router or modify main logic.
-Update backend/requirements.txt if new dependencies are needed.
+Add or update a new router file in backend/app/routers/*.py
+Update backend/app/routers/__init__.py to include the new router
+Update backend/app/main.py to register the new router
+Update backend/requirements.txt if new dependencies are needed
 ```
 
 ### Project Initialization
 
-Initializes a new project or major subproject (backend or frontend), setting up config, dependencies, and boilerplate.
+Initializes a new project or major subcomponent (backend or frontend), including configuration, setup files, and initial code structure.
 
 **Frequency**: ~2 times per month
 
 **Steps**:
-1. Add .gitignore and README.md.
-2. Add backend or frontend (web) configuration and boilerplate files.
-3. Add package/dependency management files (e.g., requirements.txt, package.json, pnpm-lock.yaml).
-4. Add initial source code and config files (e.g., backend/app/main.py, web/app/page.tsx).
+1. Add .gitignore and README.md
+2. For backend: add backend/alembic/*, backend/app/*, backend/requirements.txt, backend/alembic.ini
+3. For frontend: add web/app/*, web/next.config.ts, web/package.json, web/tsconfig.json, web/eslint.config.mjs, etc.
 
 **Files typically involved**:
 - `.gitignore`
 - `README.md`
-- `backend/**`
-- `web/**`
+- `backend/alembic.ini`
+- `backend/alembic/*`
+- `backend/app/*`
+- `backend/requirements.txt`
+- `web/app/*`
+- `web/next.config.ts`
+- `web/package.json`
+- `web/tsconfig.json`
+- `web/eslint.config.mjs`
 
 **Example commit sequence**:
 ```
-Add .gitignore and README.md.
-Add backend or frontend (web) configuration and boilerplate files.
-Add package/dependency management files (e.g., requirements.txt, package.json, pnpm-lock.yaml).
-Add initial source code and config files (e.g., backend/app/main.py, web/app/page.tsx).
+Add .gitignore and README.md
+For backend: add backend/alembic/*, backend/app/*, backend/requirements.txt, backend/alembic.ini
+For frontend: add web/app/*, web/next.config.ts, web/package.json, web/tsconfig.json, web/eslint.config.mjs, etc.
 ```
 
 

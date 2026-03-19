@@ -10,7 +10,7 @@ Use this workflow when working on **backend-feature-addition** in `lolmuse`.
 
 ## Goal
 
-Adds a new backend API endpoint or feature, including router, main app registration, and dependency updates.
+Implements a new backend API endpoint, including router, main application integration, and dependency updates.
 
 ## Common Files
 
@@ -28,10 +28,10 @@ Adds a new backend API endpoint or feature, including router, main app registrat
 
 ## Typical Commit Signals
 
-- Create or update backend/app/routers/<feature>.py for the new endpoint logic.
-- Update backend/app/routers/__init__.py to include the new router.
-- Update backend/app/main.py to register the router or modify main logic.
-- Update backend/requirements.txt if new dependencies are needed.
+- Add or update a new router file in backend/app/routers/*.py
+- Update backend/app/routers/__init__.py to include the new router
+- Update backend/app/main.py to register the new router
+- Update backend/requirements.txt if new dependencies are needed
 
 ## Notes
 
