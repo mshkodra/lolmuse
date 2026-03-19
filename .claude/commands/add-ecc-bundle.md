@@ -10,16 +10,16 @@ Use this workflow when working on **add-ecc-bundle** in `lolmuse`.
 
 ## Goal
 
-Adds a new ECC bundle to the lolmuse project, including commands, skills, identity, and agent configurations.
+Adds a new ECC (Extensible Command Collection) bundle to the lolmuse project, including commands, skills, identity, and agent configuration files.
 
 ## Common Files
 
 - `.claude/commands/add-ecc-bundle.md`
 - `.claude/commands/feature-development.md`
-- `.claude/commands/backend-feature-addition.md`
-- `.claude/commands/project-initialization.md`
 - `.claude/identity.json`
 - `.claude/ecc-tools.json`
+- `.claude/skills/lolmuse/SKILL.md`
+- `.agents/skills/lolmuse/SKILL.md`
 
 ## Suggested Sequence
 
@@ -32,9 +32,9 @@ Adds a new ECC bundle to the lolmuse project, including commands, skills, identi
 
 - Add or update .claude/commands/add-ecc-bundle.md
 - Add or update .claude/commands/feature-development.md
-- Add or update .claude/commands/backend-feature-addition.md
-- Add or update .claude/commands/project-initialization.md
 - Add or update .claude/identity.json
+- Add or update .claude/ecc-tools.json
+- Add or update .claude/skills/lolmuse/SKILL.md
 
 ## Notes
 
