@@ -10,15 +10,15 @@ Use this workflow when working on **add-ecc-bundle** in `lolmuse`.
 
 ## Goal
 
-Adds a new ECC (Extensible Cognitive Component) bundle, which includes configuration, agent definitions, skills, and documentation files for the lolmuse system.
+Adds a new ECC (Extended Cognitive Component) bundle to the project, including commands, agent configs, skills, and tool definitions.
 
 ## Common Files
 
-- `.claude/commands/project-initialization.md`
-- `.claude/homunculus/instincts/inherited/*.yaml`
+- `.claude/commands/*.md`
 - `.codex/agents/*.toml`
-- `.codex/AGENTS.md`
-- `.codex/config.toml`
+- `.agents/skills/lolmuse/*`
+- `.claude/skills/lolmuse/SKILL.md`
+- `.claude/ecc-tools.json`
 - `.claude/identity.json`
 
 ## Suggested Sequence
@@ -30,11 +30,11 @@ Adds a new ECC (Extensible Cognitive Component) bundle, which includes configura
 
 ## Typical Commit Signals
 
-- Create or update .claude/commands/project-initialization.md
-- Add or update .claude/homunculus/instincts/inherited/*.yaml
-- Add or update .codex/agents/*.toml
-- Add or update .codex/AGENTS.md
-- Add or update .codex/config.toml
+- Add or update .claude/commands/*.md files for new commands.
+- Add or update .codex/agents/*.toml files for agent configurations.
+- Add or update .agents/skills/lolmuse/* for skill definitions.
+- Add or update .claude/skills/lolmuse/SKILL.md for skill documentation.
+- Add or update .claude/ecc-tools.json for tool definitions.
 
 ## Notes
 
