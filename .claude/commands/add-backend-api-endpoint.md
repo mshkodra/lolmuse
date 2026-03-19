@@ -10,14 +10,11 @@ Use this workflow when working on **add-backend-api-endpoint** in `lolmuse`.
 
 ## Goal
 
-Adds a new API endpoint to the backend, including implementation, router registration, and dependency updates.
+Documents and implements the addition of a new backend API endpoint via command documentation.
 
 ## Common Files
 
-- `backend/app/routers/*.py`
-- `backend/app/routers/__init__.py`
-- `backend/app/main.py`
-- `backend/requirements.txt`
+- `.claude/commands/add-backend-api-endpoint.md`
 
 ## Suggested Sequence
 
@@ -28,10 +25,7 @@ Adds a new API endpoint to the backend, including implementation, router registr
 
 ## Typical Commit Signals
 
-- Create or update the endpoint implementation in backend/app/routers/*.py
-- Update backend/app/routers/__init__.py to register the new router
-- Update backend/app/main.py to ensure the new route is included
-- Update backend/requirements.txt if new dependencies are needed
+- Create or update .claude/commands/add-backend-api-endpoint.md
 
 ## Notes
 
