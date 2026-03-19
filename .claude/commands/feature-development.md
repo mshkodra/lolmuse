@@ -14,8 +14,6 @@ Standard feature implementation workflow
 
 ## Common Files
 
-- `web/app/*`
-- `web/*`
 - `**/api/**`
 
 ## Suggested Sequence
