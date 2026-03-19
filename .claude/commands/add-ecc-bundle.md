@@ -10,16 +10,16 @@ Use this workflow when working on **add-ecc-bundle** in `lolmuse`.
 
 ## Goal
 
-Adds a new ECC bundle to the lolmuse project, including commands, skills, identity, and agent definitions.
+Adds a new ECC bundle to the lolmuse project, including commands, skills, identity, and agent configurations.
 
 ## Common Files
 
-- `.claude/commands/add-ecc-bundle.md`
-- `.claude/commands/feature-development.md`
 - `.claude/commands/add-backend-api-endpoint-command.md`
+- `.claude/commands/add-ecc-bundle.md`
+- `.claude/commands/add-ecc-bundle-command.md`
+- `.claude/commands/feature-development.md`
 - `.claude/identity.json`
 - `.claude/ecc-tools.json`
-- `.claude/skills/lolmuse/SKILL.md`
 
 ## Suggested Sequence
 
@@ -30,11 +30,11 @@ Adds a new ECC bundle to the lolmuse project, including commands, skills, identi
 
 ## Typical Commit Signals
 
-- Add or update .claude/commands/add-ecc-bundle.md
-- Add or update .claude/commands/feature-development.md
-- Add or update .claude/commands/add-backend-api-endpoint-command.md or similar command files
-- Add or update .claude/identity.json
-- Add or update .claude/ecc-tools.json
+- Create or update .claude/commands/add-backend-api-endpoint-command.md
+- Create or update .claude/commands/add-ecc-bundle.md or .claude/commands/add-ecc-bundle-command.md
+- Create or update .claude/commands/feature-development.md
+- Create or update .claude/identity.json
+- Create or update .claude/ecc-tools.json
 
 ## Notes
 
