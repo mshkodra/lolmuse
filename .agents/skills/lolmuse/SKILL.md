@@ -27,7 +27,7 @@ Activate this skill when:
 
 ## Commit Conventions
 
-Follow these commit message conventions based on 61 analyzed commits.
+Follow these commit message conventions based on 72 analyzed commits.
 
 ### Commit Style: Conventional Commits
 
@@ -37,7 +37,7 @@ Follow these commit message conventions based on 61 analyzed commits.
 
 ### Message Guidelines
 
-- Average message length: ~59 characters
+- Average message length: ~60 characters
 - Keep first line concise and descriptive
 - Use imperative mood ("Add feature" not "Added feature")
 
@@ -151,66 +151,33 @@ Standard feature implementation workflow
 
 **Example commit sequence**:
 ```
-feat: add lolmuse ECC bundle (.codex/AGENTS.md)
 feat: add lolmuse ECC bundle (.codex/agents/explorer.toml)
+feat: add lolmuse ECC bundle (.codex/agents/reviewer.toml)
 feat: add lolmuse ECC bundle (.codex/agents/docs-researcher.toml)
 ```
 
-### Add Ecc Bundle
+### Add Ecc Bundle Command
 
-Adds a new ECC bundle to the lolmuse project, including commands, skills, identity, and agent configurations.
+Adds or updates the ECC bundle command definition for lolmuse, which likely defines how to add new ECC bundles to the system.
 
-**Frequency**: ~4 times per month
+**Frequency**: ~6 times per month
 
 **Steps**:
-1. Add or update .claude/commands/add-ecc-bundle.md
-2. Add or update .claude/commands/feature-development.md
-3. Add or update .claude/commands/backend-feature-addition.md
-4. Add or update .claude/commands/project-initialization.md
-5. Add or update .claude/identity.json
-6. Add or update .claude/ecc-tools.json
-7. Add or update .claude/skills/lolmuse/SKILL.md
-8. Add or update .agents/skills/lolmuse/SKILL.md
-9. Add or update .agents/skills/lolmuse/agents/openai.yaml
-10. Add or update .codex/agents/docs-researcher.toml
-11. Add or update .codex/agents/reviewer.toml
-12. Add or update .codex/agents/explorer.toml
+1. Create or update .claude/commands/add-ecc-bundle.md
 
 **Files typically involved**:
 - `.claude/commands/add-ecc-bundle.md`
-- `.claude/commands/feature-development.md`
-- `.claude/commands/backend-feature-addition.md`
-- `.claude/commands/project-initialization.md`
-- `.claude/identity.json`
-- `.claude/ecc-tools.json`
-- `.claude/skills/lolmuse/SKILL.md`
-- `.agents/skills/lolmuse/SKILL.md`
-- `.agents/skills/lolmuse/agents/openai.yaml`
-- `.codex/agents/docs-researcher.toml`
-- `.codex/agents/reviewer.toml`
-- `.codex/agents/explorer.toml`
 
 **Example commit sequence**:
 ```
-Add or update .claude/commands/add-ecc-bundle.md
-Add or update .claude/commands/feature-development.md
-Add or update .claude/commands/backend-feature-addition.md
-Add or update .claude/commands/project-initialization.md
-Add or update .claude/identity.json
-Add or update .claude/ecc-tools.json
-Add or update .claude/skills/lolmuse/SKILL.md
-Add or update .agents/skills/lolmuse/SKILL.md
-Add or update .agents/skills/lolmuse/agents/openai.yaml
-Add or update .codex/agents/docs-researcher.toml
-Add or update .codex/agents/reviewer.toml
-Add or update .codex/agents/explorer.toml
+Create or update .claude/commands/add-ecc-bundle.md
 ```
 
-### Add Backend Api Endpoint
+### Add Backend Api Endpoint Command
 
-Documents and implements the addition of a new backend API endpoint via command documentation.
+Adds or updates the command documentation for adding a backend API endpoint in lolmuse.
 
-**Frequency**: ~2 times per month
+**Frequency**: ~3 times per month
 
 **Steps**:
 1. Create or update .claude/commands/add-backend-api-endpoint.md
@@ -223,16 +190,73 @@ Documents and implements the addition of a new backend API endpoint via command 
 Create or update .claude/commands/add-backend-api-endpoint.md
 ```
 
-### Add Or Update Agent Config
+### Feature Development Command
 
-Adds or updates agent configuration files for docs-researcher, reviewer, and explorer agents.
+Adds or updates the command documentation for feature development workflow in lolmuse.
+
+**Frequency**: ~5 times per month
+
+**Steps**:
+1. Create or update .claude/commands/feature-development.md
+
+**Files typically involved**:
+- `.claude/commands/feature-development.md`
+
+**Example commit sequence**:
+```
+Create or update .claude/commands/feature-development.md
+```
+
+### Add Skill Documentation
+
+Adds or updates the SKILL.md documentation for lolmuse skills in both .agents and .claude directories.
 
 **Frequency**: ~4 times per month
 
 **Steps**:
-1. Add or update .codex/agents/docs-researcher.toml
-2. Add or update .codex/agents/reviewer.toml
-3. Add or update .codex/agents/explorer.toml
+1. Create or update .agents/skills/lolmuse/SKILL.md
+2. Create or update .claude/skills/lolmuse/SKILL.md
+
+**Files typically involved**:
+- `.agents/skills/lolmuse/SKILL.md`
+- `.claude/skills/lolmuse/SKILL.md`
+
+**Example commit sequence**:
+```
+Create or update .agents/skills/lolmuse/SKILL.md
+Create or update .claude/skills/lolmuse/SKILL.md
+```
+
+### Add Identity And Tools
+
+Adds or updates the identity and ECC tools configuration for lolmuse.
+
+**Frequency**: ~4 times per month
+
+**Steps**:
+1. Create or update .claude/identity.json
+2. Create or update .claude/ecc-tools.json
+
+**Files typically involved**:
+- `.claude/identity.json`
+- `.claude/ecc-tools.json`
+
+**Example commit sequence**:
+```
+Create or update .claude/identity.json
+Create or update .claude/ecc-tools.json
+```
+
+### Add Codex Agents
+
+Adds or updates codex agent configuration files for docs-researcher, reviewer, and explorer.
+
+**Frequency**: ~5 times per month
+
+**Steps**:
+1. Create or update .codex/agents/docs-researcher.toml
+2. Create or update .codex/agents/reviewer.toml
+3. Create or update .codex/agents/explorer.toml
 
 **Files typically involved**:
 - `.codex/agents/docs-researcher.toml`
@@ -241,9 +265,9 @@ Adds or updates agent configuration files for docs-researcher, reviewer, and exp
 
 **Example commit sequence**:
 ```
-Add or update .codex/agents/docs-researcher.toml
-Add or update .codex/agents/reviewer.toml
-Add or update .codex/agents/explorer.toml
+Create or update .codex/agents/docs-researcher.toml
+Create or update .codex/agents/reviewer.toml
+Create or update .codex/agents/explorer.toml
 ```
 
 
